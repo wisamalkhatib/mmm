@@ -2,6 +2,13 @@ import React from 'react';
 import './AboutUs.css';
 
 function AboutUs() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div className="about-us-container">
       <div className="about-us-header">
@@ -38,6 +45,17 @@ function AboutUs() {
           <p>Working together to achieve greater results</p>
         </div>
       </div>
+      
+      <button 
+        className="back-to-top-button" 
+        onClick={scrollToTop}
+        aria-label="Back to top"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path d="M12 4l-8 8h5v8h6v-8h5z" fill="currentColor" />
+        </svg>
+        Back to Top
+      </button>
     </div>
   );
 }
