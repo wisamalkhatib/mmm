@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import AboutUs from './pages/AboutUs'
+import AboutMe from './pages/AboutMe'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,12 +16,12 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About Us</Link>
+            <Link to="/about">About Me</Link>
           </li>
         </ul>
       </nav>
       <Routes>
-        <Route path="/about" element={<AboutUs />} />
+        <Route path="/about" element={<AboutMe />} />
         <Route path="/" element={
           <>
             <div>
