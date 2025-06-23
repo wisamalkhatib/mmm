@@ -90,6 +90,36 @@
   background-color: rgba(100, 108, 255, 0.2);
 }
 
+/* Back to Top button styling */
+.back-to-top-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem auto 0;
+  padding: 0.6rem 1.2rem;
+  background-color: rgba(100, 108, 255, 0.2);
+  border: 1px solid rgba(100, 108, 255, 0.3);
+  border-radius: 8px;
+  color: #646cff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-to-top-button:hover {
+  background-color: rgba(100, 108, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.back-to-top-button svg {
+  transition: transform 0.3s ease;
+}
+
+.back-to-top-button:hover svg {
+  transform: translateY(-3px);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -133,5 +163,13 @@
   
   .value-item:hover {
     background-color: rgba(100, 108, 255, 0.1);
+  }
+  
+  .back-to-top-button {
+    background-color: rgba(100, 108, 255, 0.1);
+  }
+  
+  .back-to-top-button:hover {
+    background-color: rgba(100, 108, 255, 0.2);
   }
 }
